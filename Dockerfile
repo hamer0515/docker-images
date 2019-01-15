@@ -1,0 +1,3 @@
+ARG baseimage
+
+FROM ${baseimage}

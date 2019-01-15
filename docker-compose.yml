@@ -1,0 +1,8 @@
+version: '3'
+services:
+  alpine-glibc:
+    build: alpine-glibc
+    image: hamer/alpine-glibc
+  oracle18c:
+    build: oracle18c
+    image: hamer/oracle18c
