@@ -7,8 +7,8 @@ RUN apk --update add --no-cache apache2 apache2-utils apache2-webdav apache2-ssl
     mkdir -p /run/apache2 && \
     chmod +x /startup.sh
 
-EXPOSE 80
+EXPOSE 80 443
 
-VOLUME ["/var/svn", "/certs"]
+VOLUME ["/var/svn"]
 
 CMD ["/startup.sh"]

@@ -6,3 +6,13 @@ services:
   subversion:
     build: subversion
     image: hamer/subversion
+    environment:
+      - SERVER_NAME=localhost
+      - SSLCertificateFile=/certs/server.crt
+      - SSLCertificateKeyFile=/certs/server.key
+    volumes:
+      - ./data/svn/certs:/certs
+      - ./data/svn/repo:/var/svn
+    ports:
+      - "443:443"
+      - "80:80"
