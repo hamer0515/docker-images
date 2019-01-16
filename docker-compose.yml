@@ -3,6 +3,6 @@ services:
   alpine-glibc:
     build: alpine-glibc
     image: hamer/alpine-glibc
-  oracle18c:
-    build: oracle18c
-    image: hamer/oracle18c
+  subversion:
+    build: subversion
+    image: hamer/subversion
